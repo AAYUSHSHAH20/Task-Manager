@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "5d713995b721c3bb38c1f5d0",
+		"title": "Task Manager 1",
+		"description": "This is task one number one",
+        "isCompleted" : false,
+        "dueDate" : "2024-06-15",
+        "category" : "c1"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f5d1",
+		"title": "Task Manager 2",
+		"description": "This is task one number one",
+        "isCompleted" : true,
+        "dueDate" : "2024-05-15",
+        "category" : "c1"
+    },
+    {
+        "_id": "5d713995b721c3bb38c1f5d2",
+		"title": "Task Manager 3",
+		"description": "This is task one number Three",
+        "isCompleted" : true,
+        "dueDate" : "2024-03-15",
+        "category" : "c2"
+    }
+]
