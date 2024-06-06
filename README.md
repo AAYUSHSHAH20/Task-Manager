@@ -27,6 +27,10 @@ A simple task manager application built with Node.js, Express, and MongoDB. This
 
    ```bash
    npm install
+4. Start server:
+
+   ```bash
+   npm start
 
 ## Configuration
 
