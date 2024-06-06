@@ -10,6 +10,8 @@ A simple task manager application built with Node.js, Express, and MongoDB. This
 - [Error Handling](#error-handling)
 - [Middleware](#middleware)
 - [Seed Data](#seed-data)
+- [Personal Decisions](#personal-decisions)
+- [Code structure](#code-structure)
 
 ## Installation
 
@@ -115,3 +117,41 @@ To seed the database with dummy data, you can use the provided seeder script.
 
       ```bash
    node seeder -d
+## Personal Decisions
+- Decided to separate the code as per below structure instead of write in one file.
+- Added the advance search features and pagination.
+- Added the mail functionality to check the task.
+
+## Code Structure
+
+The project structure is organized as follows:
+
+```plaintext
+Task-Manager/
+│
+├── config/                 # Configuration files
+│  ├──config.env           # Contians variables to connect to database   
+   └── db.js               # Database connection setup
+│
+├── controllers/            # Controller functions
+│   └── TaskManager.js      # Task management logic
+│
+├── middleware/             # Custom middleware
+│   ├── advanceResults.js   # Middleware for advanced filtering and pagination
+│   ├── asyncHandler.js     # Middleware for handling async functions
+│   └── errorHandler.js     # Global error handling middleware
+│
+├── models/                 # Mongoose models
+│   └── Task.js             # Task model schema
+│
+├── routes/                 # Route definitions
+│   └── TaskManager.js      # Routes for task management
+│
+├── utils/                  # Utility functions
+|   ├── errorresponse.js    # Utility for sending error Response back
+│   └── sendEmail.js        # Utility for sending emails
+│
+├── package.json            # NPM dependencies and scripts
+├── README.md               # Project documentation
+├── server.js               # Entry point for the application
+└── seeder.js               # Script for seeding the database
