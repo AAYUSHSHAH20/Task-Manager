@@ -31,7 +31,10 @@ A simple task manager application built with Node.js, Express, and MongoDB. This
 
    ```bash
    npm start
-
+5. Database Connection:
+   ```bash
+   mongodb://localhost:27017/mydatabase
+connect to the MongoDB database using above given String.   
 ## Configuration
 
 The .env file is added in the config so no need to change it.
@@ -112,4 +115,3 @@ To seed the database with dummy data, you can use the provided seeder script.
 
       ```bash
    node seeder -d
-  
